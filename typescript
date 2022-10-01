@@ -1,0 +1,139 @@
+Script started on 2022-02-18 18:18:03-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+ethan@ethan-csc222:~/Desktop/222/homework/techshell$ make
+gcc -o techshell techshell.c
+ethan@ethan-csc222:~/Desktop/222/homework/techshell$ ./techshell
+/home/ethan/Desktop/222/homework/techshell$ cd ..
+/home/ethan/Desktop/222/homework$ pwd
+/home/ethan/Desktop/222/homework
+/home/ethan/Desktop/222/homework$ cd techshell
+/home/ethan/Desktop/222/homework/techshell$ pwd
+/home/ethan/Desktop/222/homework/techshell
+/home/ethan/Desktop/222/homework/techshell$ ls -lh techshell.c
+-rwxrwxrwx 1 ethan ethan 4.0K Feb 18 18:14 techshell.c
+/home/ethan/Desktop/222/homework/techshell$ chmod 400 techshell.c
+/home/ethan/Desktop/222/homework/techshell$ ls -lh techshell.c
+-r-------- 1 ethan ethan 4.0K Feb 18 18:14 techshell.c
+/home/ethan/Desktop/222/homework/techshell$ chmod 777 techshell.c
+/home/ethan/Desktop/222/homework/techshell$ ls -lh
+total 128K
+-rwxrwxr-x 1 ethan ethan  18K Feb 18 12:05 a.out
+-rw-rw-r-- 1 ethan ethan 1.2K Feb 18 11:35 file1.txt
+-rw-rw-r-- 1 ethan ethan 1.1K Feb 18 11:38 file2.txt
+-rw-rw-r-- 1 ethan ethan    3 Feb 18 18:12 ls2.out
+-rw-rw-r-- 1 ethan ethan  272 Feb 18 18:12 ls.out
+-rw-rw-r-- 1 ethan ethan   94 Feb 14 10:19 Makefile
+-rw-rw-r-- 1 ethan ethan    4 Feb 16 11:29 num.out
+-rw-rw-r-- 1 ethan ethan    4 Feb 16 11:47 out.txt
+-rwxrwxr-x 1 ethan ethan  18K Feb 18 18:18 techshell
+-rw-rw-r-- 1 ethan ethan 2.7K Feb 11 11:59 techshellBackup2.c
+-rw-rw-r-- 1 ethan ethan 3.1K Feb 11 12:05 techshellBackup3.c
+-rw-rw-r-- 1 ethan ethan 2.4K Feb 14 10:59 techshellBackup5.c
+-rw-rw-r-- 1 ethan ethan 3.1K Feb 16 10:15 techshellBackup6.c
+-rwxrwxrwx 1 ethan ethan 4.2K Feb 18 11:59 techshellBackup7.c
+-rw-rw-r-- 1 ethan ethan 1.6K Feb 10 17:33 techshellBackup.c
+-rwxrwxrwx 1 ethan ethan 4.0K Feb 18 18:14 techshell.c
+-rw-rw-r-- 1 ethan ethan 3.6K Feb 14 10:08 techshellObliterated.c
+-rwxrwxrwx 1 ethan ethan 3.5K Feb 18 09:58 techshellWorking.c
+-rw-rw-r-- 1 ethan ethan    2 Feb 16 11:22 test2.txt
+-rw-rw-r-- 1 ethan ethan    2 Feb 16 11:26 test.out
+-rw-rw-r-- 1 ethan ethan   24 Feb 15 16:29 test.txt
+-rw-rw-r-- 1 ethan ethan    0 Feb 18 18:18 typescript
+-rw-rw-r-- 1 ethan ethan 5.9K Feb 18 11:53 typescript_old
+/home/ethan/Desktop/222/homework/techshell$ ls /root
+ls: cannot open directory '/root': Permission denied
+ERROR 2 (No such file or directory)
+/home/ethan/Desktop/222/homework/techshell$ horseface
+ERROR 2 (No such file or directory)
+/home/ethan/Desktop/222/homework/techshell$ cd . /root
+ERROR 13 (Permission denied)
+/home/ethan/Desktop/222/homework/techshell$ ps
+    PID TTY          TIME CMD
+  13012 pts/1    00:00:00 bash
+  13031 pts/1    00:00:00 techshell
+  13055 pts/1    00:00:00 ps
+/home/ethan/Desktop/222/homework/techshell$ whereis ps
+ps: /usr/bin/ps /usr/share/man/man1/ps.1.gz
+/home/ethan/Desktop/222/homework/techshell$ /bin/ps u
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ethan       1312  0.0  0.1 172652  6568 tty2     Ssl+ 13:44   0:00 /usr/lib/gdm3
+ethan       1316  0.7  2.3 577000 95956 tty2     Sl+  13:44   2:05 /usr/lib/xorg
+ethan       1358  0.0  0.3 199236 15176 tty2     Sl+  13:44   0:00 /usr/libexec/
+ethan      13006  0.0  0.0  18476  4072 pts/0    Ss   18:27   0:00 bash
+ethan      13011  0.0  0.0  16844  2204 pts/0    S+   18:27   0:00 script
+ethan      13012  0.0  0.0  18476  3964 pts/1    Ss   18:27   0:00 bash -i
+ethan      13031  0.0  0.0   2496  1540 pts/1    S+   18:28   0:00 ./techshell
+ethan      13059  0.0  0.0  20132  3228 pts/1    R+   18:30   0:00 /bin/ps u
+/home/ethan/Desktop/222/homework/techshell$ ls
+a.out	   num.out	       techshellBackup6.c      test2.txt
+file1.txt  out.txt	       techshellBackup7.c      test.out
+file2.txt  techshell	       techshellBackup.c       test.txt
+ls2.out    techshellBackup2.c  techshell.c	       typescript
+ls.out	   techshellBackup3.c  techshellObliterated.c  typescript_old
+Makefile   techshellBackup5.c  techshellWorking.c
+/home/ethan/Desktop/222/homework/techshell$ ps u > ps.out
+/home/ethan/Desktop/222/homework/techshell$ wc -l <         mofe    re ps.out
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ethan       1312  0.0  0.1 172652  6568 tty2     Ssl+ 13:44   0:00 /usr/lib/gdm3
+/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-s
+ession --systemd --session=ubuntu
+ethan       1316  0.7  2.3 577000 95956 tty2     Sl+  13:44   2:05 /usr/lib/xorg
+/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -nor
+eset -keeptty -verbose 3
+ethan       1358  0.0  0.3 199236 15176 tty2     Sl+  13:44   0:00 /usr/libexec/
+gnome-session-binary --systemd --systemd --session=ubuntu
+ethan      13006  0.0  0.0  18476  4072 pts/0    Ss   18:27   0:00 bash
+ethan      13011  0.0  0.0  16844  2204 pts/0    S+   18:27   0:00 script
+ethan      13012  0.0  0.0  18476  3964 pts/1    Ss   18:27   0:00 bash -i
+ethan      13031  0.0  0.0   2496  1540 pts/1    S+   18:28   0:00 ./techshell
+ethan      13088  0.0  0.0  20132  3224 pts/1    R+   18:30   0:00 ps u
+/home/ethan/Desktop/222/homework/techshell$ wc -l < ps.out
+9
+/home/ethan/Desktop/222/homework/techshell$ wc -l < ps.out > e wx.out     c.out
+/home/ethan/Desktop/222/homework/techshell$ cat wc.out
+9
+/home/ethan/Desktop/222/homework/techshell$ moe    ore wc.out
+9
+/home/ethan/Desktop/222/homework/techshell$ ls
+a.out	   out.txt	       techshellBackup7.c      test.txt
+file1.txt  ps.out	       techshellBackup.c       typescript
+file2.txt  techshell	       techshell.c	       typescript_old
+ls2.out    techshellBackup2.c  techshellObliterated.c  wc.out
+ls.out	   techshellBackup3.c  techshellWorking.c
+Makefile   techshellBackup5.c  test2.txt
+num.out    techshellBackup6.c  test.out
+/home/ethan/Desktop/222/homework/techshell$ rm ps.out wc.out
+/home/ethan/Desktop/222/homework/techshell$ ls
+a.out	   num.out	       techshellBackup6.c      test2.txt
+file1.txt  out.txt	       techshellBackup7.c      test.out
+file2.txt  techshell	       techshellBackup.c       test.txt
+ls2.out    techshellBackup2.c  techshell.c	       typescript
+ls.out	   techshellBackup3.c  techshellObliterated.c  typescript_old
+Makefile   techshellBackup5.c  techshellWorking.c
+/home/ethan/Desktop/222/homework/techshell$ find . -name Makel file
+./Makefile
+/home/ethan/Desktop/222/homework/techshell$ ./techshell
+/home/ethan/Desktop/222/homework/techshell$ cd ..
+/home/ethan/Desktop/222/homework$ w exit
+/home/ethan/Desktop/222/homework/techshell$ cd ~h
+ERROR 2 (No such file or directory)
+/home/ethan/Desktop/222/homework/techshell$ cd ~
+/home/ethan$ cd    pwd
+/home/ethan
+/home/ethan$ cd Desktop
+/home/ethan/Desktop$ cd 222/homework
+/home/ethan/Desktop/222/homework$ cd ~/Desktop
+/home/ethan/Desktop$ pwd
+/home/ethan/Desktop
+/home/ethan/Desktop$ ls
+222
+/home/ethan/Desktop$ ls -lh
+total 4.0K
+drwxrwxr-x 8 ethan ethan 4.0K Feb 17 09:04 222
+/home/ethan/Desktop$ lsr
+ERROR 2 (No such file or directory)
+/home/ethan/Desktop$ cd ~
+/home/ethan$ exit
+ethan@ethan-csc222:~/Desktop/222/homework/techshell$ exit
+exit
+
+Script done on 2022-02-18 18:34:04-06:00 [COMMAND_EXIT_CODE="0"]
